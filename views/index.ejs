@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div class="w-full h-screen bg-zinc-900 p-10">
+        <h3> Create Account</h3>
+    <form action="/register" method="post">
+        <input type="text" placeholder="username" name="username">
+        <input type="text" placeholder="name" name="name">
+        <input type="number" placeholder="age" name="age">
+        <input type="email" placeholder="email" name="email">
+        <input type="password" placeholder="password" name="password">
+        <input class="bg-blue-400 mt-10" type="submit" value="create user">
+    </form>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-full h-screen bg-zinc-900 p-10 text-white flex flex-col justify-center items-center">
+        <h3 class="text-2xl mb-6">Create Account</h3>
+        <form action="/register" method="post" class="flex flex-col space-y-4 w-80">
+            <input type="text" placeholder="Username" name="username" class="p-2 bg-gray-800 rounded">
+            <input type="text" placeholder="Name" name="name" class="p-2 bg-gray-800 rounded">
+            <input type="number" placeholder="Age" name="age" class="p-2 bg-gray-800 rounded">
+            <input type="email" placeholder="Email" name="email" class="p-2 bg-gray-800 rounded">
+            <input type="password" placeholder="Password" name="password" class="p-2 bg-gray-800 rounded">
+            <input type="submit" value="Create User" class="bg-blue-400 p-2 rounded cursor-pointer">
+        </form>
+        <div class="mt-6">
+            <p>Already have an account? <a href="/login" class="text-blue-400 underline">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>
