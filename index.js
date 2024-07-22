@@ -9,6 +9,9 @@ const postModel = require("./models/post");
 const cookieParser = require("cookie-parser");
 const jwt = require('jsonwebtoken');
 
+const port = process.env.PORT || 3000;
+
+
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
@@ -113,6 +116,8 @@ app.post("/post", isLoggedIn, async (req, res) => {
 });
 
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log("Server Up!");
 });
+
+module.exports = app;
